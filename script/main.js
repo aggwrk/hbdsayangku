@@ -96,7 +96,7 @@ const animationTimeline = () => {
     })
     .staggerTo(
         ".hbd-chatbox span",
-        1.5, {
+        0.7, {
             visibility: "visible",
         },
         0.05
@@ -113,23 +113,23 @@ const animationTimeline = () => {
             y: -150
         },
     "+=1")
-    .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
-    .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
-    .from(".idea-3", 0.7, ideaTextTrans)
+    .from(".idea-1", 0.5, ideaTextTrans)
+    .to(".idea-1", 0.5, ideaTextTransLeave, "+=2.5")
+    .from(".idea-2", 0.5, ideaTextTrans)
+    .to(".idea-2", 0.5, ideaTextTransLeave, "+=2.5")
+    .from(".idea-3", 0.5, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
         x: 10,
         backgroundColor: "rgb(21, 161, 237)",
         color: "#fff",
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
-    .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
+    .to(".idea-3", 0.5, ideaTextTransLeave, "+=2.5")
+    .from(".idea-4", 0.5, ideaTextTrans)
+    .to(".idea-4", 0.5, ideaTextTransLeave, "+=2.5")
     .from(
         ".idea-5",
-        0.7, {
+        0.5, {
             rotationX: 15,
             rotationZ: -10,
             skewY: "-5deg",
@@ -141,7 +141,7 @@ const animationTimeline = () => {
     )
     .to(
         ".idea-5 span",
-        0.7, {
+        0.5, {
             rotation: 90,
             x: 8,
         },
@@ -157,7 +157,7 @@ const animationTimeline = () => {
     )
     .staggerFrom(
         ".idea-6 span",
-        0.8, {
+        0.7, {
             scale: 3,
             opacity: 0,
             rotation: 15,
@@ -167,7 +167,7 @@ const animationTimeline = () => {
     )
     .staggerTo(
         ".idea-6 span",
-        0.8, {
+        0.7, {
             scale: 3,
             opacity: 0,
             rotation: -15,
@@ -178,7 +178,7 @@ const animationTimeline = () => {
     )
     .staggerFromTo(
         ".baloons img",
-        2.5, {
+        2.0, {
             opacity: 0.9,
             y: 1400,
         }, {
